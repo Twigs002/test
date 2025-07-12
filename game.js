@@ -30,14 +30,14 @@ function createObstacle() {
 }
 
 function drawSurfer() {
-  ctx.font = surfer.ducking ? "30px monospace" : "40px monospace";
+  ctx.font = surfer.ducking ? "30px Segoe UI Emoji, monospace" : "40px Segoe UI Emoji, monospace";
   ctx.textBaseline = "top";
   // Draw emoji surfer; shift down if ducking
   ctx.fillText("🏄‍♂️", surfer.x, surfer.y + (surfer.ducking ? 20 : 0));
 }
 
 function drawObstacles() {
-  ctx.font = "40px monospace";
+  ctx.font = "40px Segoe UI Emoji, monospace";
   for (let i = 0; i < obstacles.length; i++) {
     const o = obstacles[i];
     const y = o.low ? 230 : 150;
